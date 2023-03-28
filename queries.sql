@@ -24,9 +24,9 @@ SELECT species FROM animals;
 COMMIT;
 SELECT species FROM animals;
 
--- Inside a transaction delete all records in the animals table, then roll back
--- the transaction.
--- After the rollback verify if all records in the animals table still exists.
+--  Inside a transaction delete all records in the animals table, then roll back
+--  the transaction.
+--  After the rollback verify if all records in the animals table still exists.
 
 BEGIN;
 DELETE FROM animals;
@@ -73,3 +73,29 @@ SELECT species, MIN(weight_kg), MAX(weight_kg) FROM animals GROUP BY species;
 -- · What is the average number of escape attempts per animal type
 --   of those born between 1990 and 2000?
 SELECT species, AVG(escape_attempts) FROM animals WHERE date_of_birth BETWEEN '1990-01-01' AND '2000-12-31' GROUP BY species;
+
+
+
+
+
+
+-- What animals belong to Melody Pond?
+SELECT name AS animal FROM animals  INNER JOIN owners ON owner_id = owners.id WHERE full_name = 'Melody Pond';
+
+-- List of all animals that are pokemon (their type is Pokemon).
+SELECT animals.name AS animal FROM animals INNER JOIN species ON species_id = species.id WHERE species.name = 'Pokemon';
+
+-- List all owners and their animals, remember to include those that don not own any animal.
+SELECT full_name AS owner, name AS animal FROM animals  RIGHT JOIN owners ON owner_id = owners.id ORDER BY full_name;
+
+-- How many animals are there per species?
+SELECT species.name AS species, COUNT(species_id) AS "number of animals" FROM animals INNER JOIN species ON species_id = species.id GROUP BY species.name;
+
+-- List all Digimon owned by Jennifer Orwell.
+SELECT animals.name AS Digimons FROM animals INNER JOIN owners ON owner_id = owners.id WHERE full_name = 'Jennifer Orwell' AND animals.name LIKE '%mon'; 
+
+-- List all animals owned by Dean Winchester that haven not tried to escape.
+SELECT animals.name AS animals FROM animals INNER JOIN owners ON owner_id = owners.id WHERE full_name = 'Dean Winchester' AND animals.escape_attempts = 0;
+
+-- Who owns the most animals?
+SELECT full_name AS "Owner", COUNT(owner_id) AS MaxAnimals FROM animals INNER JOIN owners ON owner_id = owners.id  GROUP BY full_name ORDER BY MaxAnimals DESC LIMIT 1;
