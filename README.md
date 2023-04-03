@@ -116,6 +116,11 @@ Example commands:
 - GitHub: [@hanasabih](https://github.com/HanaSabih)
 - LinkedIn: [@hanasabih](https://www.linkedin.com/in/hana-sabih/)
 
+👤 **Eric Umeohabike**
+
+- GitHub: [@eric2umeh](https://github.com/eric2umeh)
+- LinkedIn: [@eric-umeohabike](https://www.linkedin.com/in/eric-umeohabike/)
+
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🔭 Future Features <a name="future-features"></a>
