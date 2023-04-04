@@ -31,6 +31,15 @@
 
 **Vet Clinic Database**  is a project in wich, I will use a relational database to create the initial data structure for a vet clinic. I will create a table to store animals' information, insert some data into it, and query it.
 
+### Entity Relational Diagram
+
+<div align="center">
+  <img src="diagram2.png" alt="Entity Relational Diagram" />
+  <br/>
+</div>
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
@@ -101,10 +110,6 @@ Example commands:
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
 
 
 <!-- AUTHORS -->
