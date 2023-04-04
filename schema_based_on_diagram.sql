@@ -28,22 +28,22 @@ CREATE TABLE invoices(
 );
 
 CREATE TABLE invoice_items(
-    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    unit_price DECIMAL,
-    quantity INT,
-    total_price DECIMAL,
-    invoice_id INT,
-    treatment_id INT,
-    FOREIGN KEY (invoice_id) REFERENCES invoices(id),
-    FOREIGN KEY (treatment_id) REFERENCES treatments(id),
+id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+unit_price DECIMAL,
+quantity INT,
+total_price DECIMAL,
+invoice_id INT,
+treatment_id INT,
+FOREIGN KEY (invoice_id) REFERENCES invoices(id),
+FOREIGN KEY (treatment_id) REFERENCES treatments(id),
 );
 
 CREATE TABLE mediacal_histories_treatments(
-    id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
-    mediacal_histories_id INT,
-    treatments_id INT,
-    FOREIGN KEY (mediacal_histories_id) REFERENCES mediacal_histories(id),
-    FOREIGN KEY (treatments_id) REFERENCES treatments(id)
+id INT GENERATED ALWAYS AS IDENTITY PRIMARY KEY,
+mediacal_histories_id INT,
+treatments_id INT,
+FOREIGN KEY (mediacal_histories_id) REFERENCES mediacal_histories(id),
+FOREIGN KEY (treatments_id) REFERENCES treatments(id)
 );
 
 CREATE INDEX patient_id_asc ON mediacal_histories(patient_id);

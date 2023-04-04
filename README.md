@@ -8,6 +8,7 @@
 
 - [📗 Table of Contents](#-table-of-contents)
 - [📖 Vet Clinic Database ](#-vet-clinic-database-)
+- [Entity Relational Diagram] (#-erd-)
   - [🛠 Built With ](#-built-with-)
     - [Tech Stack ](#tech-stack-)
     - [Key Features ](#key-features-)
@@ -30,6 +31,12 @@
 # 📖 Vet Clinic Database <a name="about-project"></a>
 
 **Vet Clinic Database**  is a project in wich, I will use a relational database to create the initial data structure for a vet clinic. I will create a table to store animals' information, insert some data into it, and query it.
+
+# 📖 Vet Clinic Database <a name="about-project"></a>
+
+
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -101,10 +108,6 @@ Example commands:
 - Check [queries.sql](./queries.sql) for examples of queries that can be run on a newly created database. **Important note: this file might include queries that make changes in the database (e.g., remove records). Use them responsibly!**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
-
-
 
 
 <!-- AUTHORS -->
