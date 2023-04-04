@@ -34,7 +34,10 @@
 
 # 📖 Vet Clinic Database <a name="about-project"></a>
 
-
+<div align="center">
+  <img src="./diagram2" alt="Entity Relational Diagram" />
+  <br/>
+</div>
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
